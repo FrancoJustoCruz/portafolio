@@ -14,7 +14,7 @@ export default function App() {
       <div className="background-image">
         <Navbar toggleLanguage={toggleLanguage} isEnglish={isEnglish} />
         <div className="imagenPerfilContainer">
-          <img className='imagenPerfil' src="/public/foto.png" alt="Profile" />
+          <div className='imagenPerfil'/>
         </div>
         <div className="texto">
           <h1>{isEnglish ? 'Hello, I am Franco' : 'Hola, soy Franco'}</h1>

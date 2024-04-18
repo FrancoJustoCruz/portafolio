@@ -24,6 +24,15 @@
     animation: barrido-izquierda 1.5s ease forwards;
     border: none;
 }
+.imagenPerfil {
+    width: 15vw; /* Ajusta el ancho según sea necesario */
+    height: 30vh; /* Ajusta la altura según sea necesario */
+    background-image: url('../public/foto.jpg'); /* Ruta de tu imagen de perfil */
+    background-size: cover; /* Cubre todo el contenido del div */
+    background-position: center; /* Centra la imagen */
+    border-radius: 50%; /* Para hacerlo circular */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del div */
+  }
 
 @keyframes barrido-izquierda {
     0% {
