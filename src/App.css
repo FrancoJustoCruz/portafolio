@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+.background-image {
+    background-image: url('./fondo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+  }
+ .bg-body-tertiary {
+  --bs-bg-opacity: 0 !important; 
+  background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+@media(max-width:991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+.imagenPerfilContainer {
+    position: absolute; 
+    top: 20vh; 
+    left: 20vw; 
+    animation: barrido-izquierda 1.5s ease forwards;
+    border: none;
+}
+
+@keyframes barrido-izquierda {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  .texto h1{
+    font-size: 60px;
+  }
+  .texto p{
+    font-size: 38px;
+  }
+  .texto {
+    position: absolute;
+    top: 28vh;
+    left: 40vw;
+    color: white;
+    font-family: "Jersey 10", sans-serif;
+    opacity: 0; 
+    animation: typing 1s ease forwards; 
+    animation-delay: 1s; 
+}
+
+
+@keyframes typing {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
